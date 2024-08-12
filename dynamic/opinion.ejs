@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StarLine</title>
+    <link rel="stylesheet" href="/style2.css" />
+  </head>
+  <body>
+    <div class="flex" id="text_con">
+      <div id="logo">
+        <img id="star_sv" src="/star.svg" />
+        <div id="splash_text" class="oswal flex" onclick="home()">
+          <div id="text_reveal">STARLINE</div>
+          <div id="text_reveal2">JOURNAL</div>
+        </div>
+      </div>
+
+      <nav class="navbar">
+        <a href="javascript:void(0);" class="toggle-button" id="navbarToggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links quick_s" id="navbarLinks">
+          <ul>
+            <li id="li1"><a></a></li>
+            <li id="li2"><a href="/starline-journal/newsline">Newsline</a></li>
+            <li id="li3">
+              <a href="/starline-journal/opinion" class="active">Opinion</a>
+            </li>
+            <li id="li4"><a href="/starline-journal/creative">Creative</a></li>
+            <li id="li5"><a href="/starline-journal/culture">Culture</a></li>
+            <li id="li6"><a href="/about">About</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="quick_s flex column" id="contain"></div>
+  </body>
+  <script src="/script_show.js"></script>
+</html>

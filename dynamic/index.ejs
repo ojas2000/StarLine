@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StarLine</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="ani_container">
+      <div id="ani"></div>
+      <div id="ani2"></div>
+
+      <div class="flex" id="text_con">
+        <img src="star.png" id="star" />
+        <img id="star_sv" src="star.svg" />
+        <div id="splash_text" class="oswal flex" onclick="home()">
+          <div id="text_reveal">STARLINE</div>
+          <div id="text_reveal2"></div>
+        </div>
+      </div>
+      <button class="oswal" onclick="bright()" id="enter_b">Enter</button>
+      <nav class="navbar">
+        <a href="javascript:void(0);" class="toggle-button" id="navbarToggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links quick_s" id="navbarLinks">
+          <ul>
+            <li id="li1"><a></a></li>
+            <li id="li2"><a href="/starline-journal/newsline">Newsline</a></li>
+            <li id="li3"><a href="/starline-journal/opinion">Opinion</a></li>
+            <li id="li4"><a href="/starline-journal/creative">Creative</a></li>
+            <li id="li5"><a href="/starline-journal/culture">Culture</a></li>
+            <li id="li6"><a href="/about">About</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div id="front_banner" class="flex column">
+      <div id="heading" class="quick_s">
+        Beyond Boundaries, <br />
+        Across Horizons.
+      </div>
+      <div id="subheading" class="quick_s">
+        Empowering student writers to share their<br />
+        unique perspectives on news, culture, and<br />
+        current events. Join our vibrant community and<br />
+        let your voice shine across the stars.
+      </div>
+    </div>
+
+    <div id="fresh_head" class="antic">FRESH UPDATES</div>
+    <div id="fresh_news" class="flex quick_s">
+      <div id="fn1" class="fn flex column">
+        <div id="fn_text" onclick="n" class="column flex fn_text">
+          <img class="fn_img" src="news1.jpg" />
+          <div class="fn_t_t">
+            <div class="fn_writer">AV</div>
+            <div class="fn_topic">EWJGJ</div>
+            <div class="fn_body">
+              JHFiagknaknkjadnjk nweiue thewubth kjewb gkjrsht iewbjk
+            </div>
+          </div>
+        </div>
+        <div class="fn_stats flex">
+          <div class="hearts flex">
+            <div class="stage"><div class="heart"></div></div>
+
+            <div class="fn_hearts">1</div>
+          </div>
+          <div class="views flex">
+            <div class="fn_views">1</div>
+            <img src="views.png" />
+          </div>
+        </div>
+      </div>
+      <div id="fn2" class="fn flex column">
+        <div id="fn_text" class="column flex fn_text">
+          <img class="fn_img" src="news1.jpg" />
+          <div class="fn_t_t">
+            <div class="fn_writer">AV</div>
+            <div class="fn_topic">EWJGJ</div>
+            <div class="fn_body">
+              JHFiagknaknkjadnjk nweiue thewubth kjewb gkjrsht iewbjk
+            </div>
+          </div>
+        </div>
+        <div class="fn_stats flex">
+          <div class="hearts flex">
+            <div class="stage"><div class="heart"></div></div>
+            <div class="fn_hearts">1</div>
+          </div>
+          <div class="views flex">
+            <div class="fn_views">1</div>
+            <img src="views.png" />
+          </div>
+        </div>
+      </div>
+      <div id="fn3" class="fn flex column">
+        <div id="fn_text" class="column flex fn_text">
+          <img class="fn_img" src="news1.jpg" alt="" />
+          <div class="fn_t_t">
+            <div class="fn_writer">AV</div>
+            <div class="fn_topic">EWJGJ</div>
+            <div class="fn_body">
+              JHFiagknaknkjadnjk nweiue thewubth kjewb gkjrsht iewbjk
+            </div>
+          </div>
+        </div>
+        <div class="fn_stats flex">
+          <div class="hearts flex">
+            <div class="stage"><div class="heart"></div></div>
+            <div class="fn_hearts">1</div>
+          </div>
+          <div class="views flex">
+            <div class="fn_views">1</div>
+            <img src="views.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="discover" class="flex">
+      <img src="discover.jpg" />
+      <div id="discover_text">
+        <div
+          class="antic"
+          style="font-size: calc(var(--sizeMT) / 1.4); font-weight: 400"
+        >
+          DISCOVER OUR PLATFORM
+        </div>
+        <div class="antic" style="font-weight: 0; font-size: 1.5rem">
+          Insightful Articles
+        </div>
+        <div class="quick_s" style="font-weight: 800">
+          Established in 2000, The Interscholastic Newspaper is your go-to
+          source for engaging and informative content on a wide range of topics.
+          Stay ahead of the curve with our daily updates tailored to enhance
+          your knowledge and understanding. Subscribe now and be part of our
+          Online News Magazine community.
+        </div>
+      </div>
+    </div>
+
+    <footer></footer>
+  </body>
+  <script src="script.js"></script>
+</html>

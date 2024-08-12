@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StarLine</title>
+    <link rel="stylesheet" href="/style3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="flex" id="text_con">
+      <div id="logo">
+        <img id="star_sv" src="/star.svg" />
+        <div id="splash_text" class="oswal flex" onclick="home()">
+          <div id="text_reveal">STARLINE</div>
+          <div id="text_reveal2">JOURNAL</div>
+        </div>
+      </div>
+
+      <nav class="navbar">
+        <a href="javascript:void(0);" class="toggle-button" id="navbarToggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links quick_s" id="navbarLinks">
+          <ul>
+            <li id="li1"><a></a></li>
+            <li id="li2"><a href="/starline-journal/newsline">Newsline</a></li>
+            <li id="li3">
+              <a href="/starline-journal/opinion">Opinion</a>
+            </li>
+            <li id="li4"><a href="/starline-journal/creative">Creative</a></li>
+            <li id="li5"><a href="/starline-journal/culture">Culture</a></li>
+            <li id="li6"><a href="/about">About</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="quick_s flex column" id="contain">
+      <div class="fn flex column">
+        <div class="top_bar flex">
+          <img class="writer_img" src="/writer.png" />
+          <div class="writerInfo1">AM Mahajan • Jun 26 • 2 min read</div>
+        </div>
+        <div class="main_text">
+          <p>The Rise of Remote Work: A Paradigm Shift in Employment</p>
+          <p id="p_sub">Introduction to Remote Work</p>
+          Remote work, once considered a niche employment model, has rapidly
+          become a mainstream option. The flexibility it offers has attracted
+          millions of workers and companies worldwide. With technological
+          advancements and changing attitudes toward work-life balance, remote
+          work is now a viable alternative to traditional office settings.
+          <p id="p_sub">Technological Enablers of Remote Work</p>
+          The rise of remote work has been significantly driven by advances in
+          technology. High-speed internet, cloud computing, and collaboration
+          tools like Zoom, Slack, and Microsoft Teams have made it easier than
+          ever for employees to work from anywhere. These technologies allow for
+          seamless communication, project management, and file sharing, breaking
+          down the barriers that once confined work to the office.
+          <p id="p_sub">The Impact of Remote Work on Productivity</p>
+          Contrary to early skepticism, remote work has shown to increase
+          productivity in many cases. Without the distractions of a traditional
+          office environment, many employees find they can focus better and
+          complete tasks more efficiently. Additionally, the time saved on
+          commuting allows workers to start their day earlier or use that time
+          for personal activities, contributing to a better work-life balance.
+          <p id="p_sub">Challenges of Remote Work</p>
+          Despite its benefits, remote work also comes with its own set of
+          challenges. Employees often struggle with maintaining boundaries
+          between work and personal life, leading to burnout. Additionally, the
+          lack of face-to-face interaction can result in feelings of isolation
+          and a weakened sense of team cohesion. Companies also face
+          difficulties in managing remote teams, ensuring productivity, and
+          maintaining a strong corporate culture.
+        </div>
+
+        <div class="bottom_bar">
+          <div class="social-icons">
+            <div class="icons_">
+              <a href="#"><i class="fa-brands fa-facebook-f fa-lg"></i></a>
+              <!-- Facebook -->
+              <a href="#"><i class="fa-brands fa-x-twitter fa-lg"></i></a>
+              <!-- X -->
+              <a href="#"><i class="fa-brands fa-linkedin-in fa-lg"></i></a>
+              <!-- LinkedIn -->
+              <a href="#"><i class="fa-solid fa-link fa-lg"></i></a>
+              <!-- Link -->
+            </div>
+
+            <span class="opinion" style="font-weight: 700">Opinion</span>
+          </div>
+
+          <div class="fn_stats flex">
+            <div class="hearts flex">
+              <div class="stage"><div class="heart"></div></div>
+              <div class="fn_hearts">1</div>
+            </div>
+            <div class="views flex">
+              <div class="fn_views">1 view</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/script_page.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      var description = "<%-page_info%>";
+      console.log(description.replace(/-/g, " "));
+
+      fetch(`/entries/heading/${description}`)
+        .then((response) => response.json())
+        .then((data) => {
+          const opinionEntries = data.journal_entries.filter(
+            (entry) => entry.type === type
+          );
+          displayOpinionEntries(opinionEntries);
+        })
+        .catch((error) => console.error("Error loading JSON data:", error));
+    });
+
+    function displayOpinionEntries(entries) {
+      const container = document.getElementById("contain");
+      var description = getQueryParam("description");
+    }
+  </script>
+</html>
